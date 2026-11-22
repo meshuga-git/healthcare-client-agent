@@ -1,0 +1,24 @@
+id: us_demo
+country: USA
+status: synthetic_demonstration_not_legal_guidance
+guardian_age: 18
+guardian_consent_required: true
+guardian_contact_required: true
+retention_days: 30
+retention_note: Demo placeholder, not a legal records retention determination. State
+  and record-specific requirements require review.
+quiet_hours:
+  start: 20
+  end: 8
+channel_consent_text: I agree to receive scheduling messages through this selected
+  channel. I can opt out with STOP.
+emergency_text: If this is an emergency or you are in immediate danger, call 911 now. This scheduling demo cannot provide emergency care. Do not wait for a reply here.
+emergency_source: https://www.911.gov/
+clinical_text: I cannot provide medical advice or interpret symptoms, medications,
+  or results. I will ask practice staff to help.
+state_specific_review_required:
+- guardian and minor consent
+- channel consent and messaging
+- records retention and deletion
+- emergency wording and staff response procedures
+human_reviewed: false
