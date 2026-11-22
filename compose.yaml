@@ -1,0 +1,33 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: harbor
+      POSTGRES_PASSWORD: local-synthetic-only
+      POSTGRES_DB: harbor
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U harbor"]
+      interval: 3s
+      retries: 20
+  api:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      DATABASE_URL: postgresql://harbor:local-synthetic-only@postgres:5432/harbor
+      IDENTITY_DB: /data/identity.db
+      STAFF_API_TOKEN: local-demo-admin-not-for-deployment
+    volumes: ["appdata:/data"]
+    working_dir: /data
+    command: ["uvicorn", "harbor.api:create_app", "--factory", "--app-dir", "/app", "--host", "0.0.0.0", "--port", "8000"]
+    depends_on:
+      postgres: {condition: service_healthy}
+  console:
+    build: .
+    ports: ["127.0.0.1:8501:8501"]
+    environment: {API_URL: "http://api:8000"}
+    command: ["streamlit", "run", "harbor/console.py", "--server.address", "0.0.0.0"]
+    depends_on: [api]
+volumes:
+  pgdata:
+  appdata:
