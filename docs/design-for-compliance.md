@@ -1,0 +1,13 @@
+# Design-for-compliance note — synthetic US demonstration
+
+This is a compliance-aware design, **not a claim of HIPAA compliance**, legal advice or clinical safety validation. No real protected health information is authorized here.
+
+## Data flow and controls
+A loopback-only Streamlit/API demo accepts synthetic scheduling requests. A static emergency/clinical screen runs before authentication. Identity uses encrypted personal fields, HMAC lookup, expiring scoped session tokens, verification attempt limits and audit. Engine-produced slot identifiers are validated inside booking transactions. PostgreSQL resource allocations have exclusion constraints; SQLite fallback instead serializes writes and does not establish PostgreSQL runtime validation. Intake is encrypted and links expire and are single-use. Role and location checks happen on the server; a guest receives aggregate counts only. Logs avoid raw message bodies and model contexts. Mock reminder sends check current channel consent, quiet hours, and cancellation state at send time; STOP suppresses pending work.
+
+The mock outbox does not deliver anything to people. A local escalation means only a queue entry, not that a clinician or emergency service has been contacted. In the USA an emergency requires calling 911, not waiting for this application ([911.gov](https://www.911.gov/)). Lexical detection is incomplete and cannot assess or triage symptoms.
+
+## Before any real patient data
+A deployment needs applicable legal review, a documented security/risk analysis, relevant processor/business-associate agreements, vendor and hosting review, identity and staff authentication hardening, TLS, key rotation/secrets management, backup/restore and breach procedures, minimum-necessary access policies, operational staffing, retention/deletion policy validation, accessibility review, and clinically reviewed escalation language. HIPAA obligations depend on entity status and use; controls alone do not establish compliance. See [HHS cloud computing guidance](https://www.hhs.gov/hipaa/for-professionals/special-topics/health-information-technology/cloud-computing/index.html) and [business-associate guidance](https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html).
+
+The US demo configuration is not a state-specific legal profile. Guardian age, consent wording, retention and cancellation policies are fictional configurable defaults. No clinical instructions, fasting protocol, recall intervals, results interpretation or treatment eligibility are inferred by the model. Staff-reviewed flags are scheduling prerequisites only.
