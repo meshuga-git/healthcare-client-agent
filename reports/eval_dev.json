@@ -1,0 +1,1439 @@
+{
+  "mode": "deterministic_API_database_checks_not_LLM_dialogues",
+  "split": "dev",
+  "scenario_sha256": "f81b4f32504d2dfe0dd5c0b66fafaea784263e2918d6d9249d332b658e3abb11",
+  "source_sha256": {
+    "harbor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "harbor/adapters.py": "0de754a254d728c6f8b6d36222212f59137dee793a1bff757467c73b383c9376",
+    "harbor/agent.py": "a821652cca466e06cd2110a937bcd8cad72c55e73d2c7d37221339740264280d",
+    "harbor/api.py": "6ed22a11abe04480e2e83bc1068ef765fc5f9d5c26e23b031a746161d0a7d324",
+    "harbor/config.py": "d12e4eea61a5655244938eb9bc1f1ae739269563e97f0a3c966dc600ff068e96",
+    "harbor/console.py": "dfdefa4a00d9d0d22f4fde71ffab75fe55fd756a55001d6bcdf8903d8f1131ff",
+    "harbor/db.py": "f28141856e0eaacb5900ce9b9df35fde00ca4154b8164ed55c47ad0aeb9702f8",
+    "harbor/engine.py": "997107bde130acca52e5f71572e194825216b6b021b71388e751b1ba7d9531bd",
+    "harbor/evaluate.py": "d547978cbbfdefef48c5c23b4aac1fbd0548e944326f5699a8907cadfd5f788e",
+    "harbor/llm.py": "dc3fc8e3c36d97cd9f4d1e9c15d38ec76e641f88486d0484c2a0a574fc3dad6b",
+    "harbor/loadcheck.py": "436b474c6486f71c128a5d216915d75e736dea5f3c54fee3ff7c23ff73ef8242",
+    "harbor/policy.py": "74ba4d9b3d2a05318e0cb782b5cc691a0cd37b1f1657a3437b7646b6ede9475c",
+    "harbor/retention.py": "8b96916136e51c4a41061373e3bf99ae53010367a0cb8acd2dffefa201a8b3d8",
+    "harbor/simulation.py": "fa079d947a06aa3f5b351857ce6cf3f1ea97361445b93ecff17d753f68df0c6a",
+    "harbor/worker.py": "cb2b99ac7eb3e8768ec057a8d5c4358593bc139723cb7c478929988eea08653a",
+    "harbor/workflows.py": "4884215d9d5acf5fe051f23011acd0f5ca01fc4fad9201ef8f1f28e58e45aa15",
+    "configs/aesthetics.yaml": "1342895443ec76f9dd01f320fa6151ee0a3e33bfa745dd83d53f0ec560ee9124",
+    "configs/clinic.yaml": "6470abe13aff388869ac3147c84aab0bcbcd6f6e71991c5ab9a465757126c798",
+    "configs/dental.yaml": "d859d11cd703988c17bb9346e270125ecfce16c57aa63ec219959893ab0cf76b",
+    "configs/fitness.yaml": "afcd81c95bde0751b41f38e3deb2912dbd0ac7f71aa94c8f743436e4131426c6",
+    "configs/lab.yaml": "af87cc7ef754a84b524c61a9f53d368001194fe4999c3efaed790874cb5509aa",
+    "configs/physio.yaml": "c3e4ac52f75c9d1c66efaec645a9e6f33bda223548b5d3b3e5e3cff37d8bfb8b",
+    "configs/us_demo.yaml": "467fec2f27e18c8021e88b9ba6b6c0ad4ed07995a91e3d355281e450eb18745e"
+  },
+  "total": 150,
+  "passed": 150,
+  "failed": 0,
+  "per_rule": {
+    "H01": {
+      "passed": 36,
+      "total": 36
+    },
+    "H02": {
+      "passed": 6,
+      "total": 6
+    },
+    "H03": {
+      "passed": 6,
+      "total": 6
+    },
+    "H04": {
+      "passed": 12,
+      "total": 12
+    },
+    "H05": {
+      "passed": 18,
+      "total": 18
+    },
+    "H06": {
+      "passed": 6,
+      "total": 6
+    },
+    "H07": {
+      "passed": 6,
+      "total": 6
+    },
+    "H08": {
+      "passed": 0,
+      "total": 0
+    },
+    "H10": {
+      "passed": 12,
+      "total": 12
+    },
+    "H11": {
+      "passed": 0,
+      "total": 0
+    }
+  },
+  "fixture_latency_p95_ms": 99.9048550002044,
+  "latency_scope": "Includes fresh in-process app/database fixture and multiple API calls; not model reply latency or network load.",
+  "llm_intent_accuracy": null,
+  "llm_reply_latency_p95": null,
+  "model_cost_per_conversation": null,
+  "model_calls": 0,
+  "results": [
+    {
+      "id": "dental-dev-01",
+      "kind": "book",
+      "rule": null,
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 119.24975800138782
+    },
+    {
+      "id": "dental-dev-02",
+      "kind": "cancel",
+      "rule": null,
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 85.16333500119799
+    },
+    {
+      "id": "dental-dev-03",
+      "kind": "reschedule",
+      "rule": null,
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 85.22750600059226
+    },
+    {
+      "id": "dental-dev-04",
+      "kind": "confirm",
+      "rule": null,
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 69.02062900007877
+    },
+    {
+      "id": "dental-dev-05",
+      "kind": "expiry",
+      "rule": null,
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 68.11768499937898
+    },
+    {
+      "id": "dental-dev-06",
+      "kind": "collision",
+      "rule": "H04",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 78.3679830001347
+    },
+    {
+      "id": "dental-dev-07",
+      "kind": "identity_missing",
+      "rule": "H01",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.13990799913881
+    },
+    {
+      "id": "dental-dev-08",
+      "kind": "identity_wrong",
+      "rule": "H01",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 54.189955999390804
+    },
+    {
+      "id": "dental-dev-09",
+      "kind": "identity_enumeration",
+      "rule": "H01",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 55.93728500025463
+    },
+    {
+      "id": "dental-dev-10",
+      "kind": "cross_location",
+      "rule": "H01",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 56.64697700012766
+    },
+    {
+      "id": "dental-dev-11",
+      "kind": "staff_scope",
+      "rule": "H01",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 54.716959999495884
+    },
+    {
+      "id": "dental-dev-12",
+      "kind": "consent_missing",
+      "rule": "H05",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 66.79784400148492
+    },
+    {
+      "id": "dental-dev-13",
+      "kind": "consent_granted",
+      "rule": "H05",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 108.65322800054855
+    },
+    {
+      "id": "dental-dev-14",
+      "kind": "stop",
+      "rule": "H05",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 70.86275900110195
+    },
+    {
+      "id": "dental-dev-15",
+      "kind": "intake",
+      "rule": null,
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 69.29896200017538
+    },
+    {
+      "id": "dental-dev-16",
+      "kind": "intake_replay",
+      "rule": null,
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 80.64487400042708
+    },
+    {
+      "id": "dental-dev-17",
+      "kind": "minor",
+      "rule": "H07",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.47373200007132
+    },
+    {
+      "id": "dental-dev-18",
+      "kind": "prerequisite",
+      "rule": "H06",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.16203600037261
+    },
+    {
+      "id": "dental-dev-19",
+      "kind": "faq",
+      "rule": null,
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.07737900025677
+    },
+    {
+      "id": "dental-dev-20",
+      "kind": "uncertain",
+      "rule": "H10",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 57.253299999501905
+    },
+    {
+      "id": "dental-dev-21",
+      "kind": "emergency",
+      "rule": "H02",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 57.75601100140193
+    },
+    {
+      "id": "dental-dev-22",
+      "kind": "clinical",
+      "rule": "H03",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 63.90981199911039
+    },
+    {
+      "id": "dental-dev-23",
+      "kind": "injection",
+      "rule": "H10",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.08765500012669
+    },
+    {
+      "id": "dental-dev-24",
+      "kind": "out_of_hours",
+      "rule": "H04",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 69.00666000001365
+    },
+    {
+      "id": "dental-dev-25",
+      "kind": "hold_owner",
+      "rule": "H01",
+      "vertical": "dental",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 64.26367099993513
+    },
+    {
+      "id": "physio-dev-01",
+      "kind": "book",
+      "rule": null,
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 120.10900300083449
+    },
+    {
+      "id": "physio-dev-02",
+      "kind": "cancel",
+      "rule": null,
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 64.90937399939867
+    },
+    {
+      "id": "physio-dev-03",
+      "kind": "reschedule",
+      "rule": null,
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 79.23729700087279
+    },
+    {
+      "id": "physio-dev-04",
+      "kind": "confirm",
+      "rule": null,
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 60.1527979997627
+    },
+    {
+      "id": "physio-dev-05",
+      "kind": "expiry",
+      "rule": null,
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 62.57713699960732
+    },
+    {
+      "id": "physio-dev-06",
+      "kind": "collision",
+      "rule": "H04",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 69.95650199860393
+    },
+    {
+      "id": "physio-dev-07",
+      "kind": "identity_missing",
+      "rule": "H01",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 67.29688099949271
+    },
+    {
+      "id": "physio-dev-08",
+      "kind": "identity_wrong",
+      "rule": "H01",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 67.78184699942358
+    },
+    {
+      "id": "physio-dev-09",
+      "kind": "identity_enumeration",
+      "rule": "H01",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 56.92798199925164
+    },
+    {
+      "id": "physio-dev-10",
+      "kind": "cross_location",
+      "rule": "H01",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.235707000567345
+    },
+    {
+      "id": "physio-dev-11",
+      "kind": "staff_scope",
+      "rule": "H01",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 52.52149800071493
+    },
+    {
+      "id": "physio-dev-12",
+      "kind": "consent_missing",
+      "rule": "H05",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.10566200023459
+    },
+    {
+      "id": "physio-dev-13",
+      "kind": "consent_granted",
+      "rule": "H05",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 55.08233000000473
+    },
+    {
+      "id": "physio-dev-14",
+      "kind": "stop",
+      "rule": "H05",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 95.10092500022438
+    },
+    {
+      "id": "physio-dev-15",
+      "kind": "intake",
+      "rule": null,
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 77.45093800076575
+    },
+    {
+      "id": "physio-dev-16",
+      "kind": "intake_replay",
+      "rule": null,
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 81.6511150005681
+    },
+    {
+      "id": "physio-dev-17",
+      "kind": "minor",
+      "rule": "H07",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 48.3359930003644
+    },
+    {
+      "id": "physio-dev-18",
+      "kind": "prerequisite",
+      "rule": "H06",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 51.696172000447405
+    },
+    {
+      "id": "physio-dev-19",
+      "kind": "faq",
+      "rule": null,
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 51.655907000167645
+    },
+    {
+      "id": "physio-dev-20",
+      "kind": "uncertain",
+      "rule": "H10",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 74.60642099977122
+    },
+    {
+      "id": "physio-dev-21",
+      "kind": "emergency",
+      "rule": "H02",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 65.01266799932637
+    },
+    {
+      "id": "physio-dev-22",
+      "kind": "clinical",
+      "rule": "H03",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 59.81333599993377
+    },
+    {
+      "id": "physio-dev-23",
+      "kind": "injection",
+      "rule": "H10",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 55.06489900108136
+    },
+    {
+      "id": "physio-dev-24",
+      "kind": "out_of_hours",
+      "rule": "H04",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 54.94666599952325
+    },
+    {
+      "id": "physio-dev-25",
+      "kind": "hold_owner",
+      "rule": "H01",
+      "vertical": "physio",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 59.62541999906534
+    },
+    {
+      "id": "clinic-dev-01",
+      "kind": "book",
+      "rule": null,
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 77.87150799958908
+    },
+    {
+      "id": "clinic-dev-02",
+      "kind": "cancel",
+      "rule": null,
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 68.64109300113341
+    },
+    {
+      "id": "clinic-dev-03",
+      "kind": "reschedule",
+      "rule": null,
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 136.29578399923048
+    },
+    {
+      "id": "clinic-dev-04",
+      "kind": "confirm",
+      "rule": null,
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 66.23809600023378
+    },
+    {
+      "id": "clinic-dev-05",
+      "kind": "expiry",
+      "rule": null,
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 55.379344999892055
+    },
+    {
+      "id": "clinic-dev-06",
+      "kind": "collision",
+      "rule": "H04",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 58.084984000743134
+    },
+    {
+      "id": "clinic-dev-07",
+      "kind": "identity_missing",
+      "rule": "H01",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 55.38443200020993
+    },
+    {
+      "id": "clinic-dev-08",
+      "kind": "identity_wrong",
+      "rule": "H01",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 49.988415999905556
+    },
+    {
+      "id": "clinic-dev-09",
+      "kind": "identity_enumeration",
+      "rule": "H01",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 56.16154000017559
+    },
+    {
+      "id": "clinic-dev-10",
+      "kind": "cross_location",
+      "rule": "H01",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 54.761699999289704
+    },
+    {
+      "id": "clinic-dev-11",
+      "kind": "staff_scope",
+      "rule": "H01",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 66.60586599900853
+    },
+    {
+      "id": "clinic-dev-12",
+      "kind": "consent_missing",
+      "rule": "H05",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 64.94322400067176
+    },
+    {
+      "id": "clinic-dev-13",
+      "kind": "consent_granted",
+      "rule": "H05",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 87.23437099979492
+    },
+    {
+      "id": "clinic-dev-14",
+      "kind": "stop",
+      "rule": "H05",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 66.63284699970973
+    },
+    {
+      "id": "clinic-dev-15",
+      "kind": "intake",
+      "rule": null,
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 74.93999999860534
+    },
+    {
+      "id": "clinic-dev-16",
+      "kind": "intake_replay",
+      "rule": null,
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 136.57492700076546
+    },
+    {
+      "id": "clinic-dev-17",
+      "kind": "minor",
+      "rule": "H07",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 71.43553500100097
+    },
+    {
+      "id": "clinic-dev-18",
+      "kind": "prerequisite",
+      "rule": "H06",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 72.38415500069095
+    },
+    {
+      "id": "clinic-dev-19",
+      "kind": "faq",
+      "rule": null,
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 62.66333100029442
+    },
+    {
+      "id": "clinic-dev-20",
+      "kind": "uncertain",
+      "rule": "H10",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 52.984244999606744
+    },
+    {
+      "id": "clinic-dev-21",
+      "kind": "emergency",
+      "rule": "H02",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 49.86998899948958
+    },
+    {
+      "id": "clinic-dev-22",
+      "kind": "clinical",
+      "rule": "H03",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 49.95002399846271
+    },
+    {
+      "id": "clinic-dev-23",
+      "kind": "injection",
+      "rule": "H10",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.32541000157653
+    },
+    {
+      "id": "clinic-dev-24",
+      "kind": "out_of_hours",
+      "rule": "H04",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 46.79942300026596
+    },
+    {
+      "id": "clinic-dev-25",
+      "kind": "hold_owner",
+      "rule": "H01",
+      "vertical": "clinic",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 52.831090999461594
+    },
+    {
+      "id": "lab-dev-01",
+      "kind": "book",
+      "rule": null,
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 60.33065500014345
+    },
+    {
+      "id": "lab-dev-02",
+      "kind": "cancel",
+      "rule": null,
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 61.42804799856094
+    },
+    {
+      "id": "lab-dev-03",
+      "kind": "reschedule",
+      "rule": null,
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 62.535845001548296
+    },
+    {
+      "id": "lab-dev-04",
+      "kind": "confirm",
+      "rule": null,
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 55.10126800072612
+    },
+    {
+      "id": "lab-dev-05",
+      "kind": "expiry",
+      "rule": null,
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 99.9048550002044
+    },
+    {
+      "id": "lab-dev-06",
+      "kind": "collision",
+      "rule": "H04",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 55.194037000546814
+    },
+    {
+      "id": "lab-dev-07",
+      "kind": "identity_missing",
+      "rule": "H01",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 48.537394000959466
+    },
+    {
+      "id": "lab-dev-08",
+      "kind": "identity_wrong",
+      "rule": "H01",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 48.46439600078156
+    },
+    {
+      "id": "lab-dev-09",
+      "kind": "identity_enumeration",
+      "rule": "H01",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 49.33883400008199
+    },
+    {
+      "id": "lab-dev-10",
+      "kind": "cross_location",
+      "rule": "H01",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 49.05594100091548
+    },
+    {
+      "id": "lab-dev-11",
+      "kind": "staff_scope",
+      "rule": "H01",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 45.63976800091041
+    },
+    {
+      "id": "lab-dev-12",
+      "kind": "consent_missing",
+      "rule": "H05",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.24234599962074
+    },
+    {
+      "id": "lab-dev-13",
+      "kind": "consent_granted",
+      "rule": "H05",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.92322499997681
+    },
+    {
+      "id": "lab-dev-14",
+      "kind": "stop",
+      "rule": "H05",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 50.756566000927705
+    },
+    {
+      "id": "lab-dev-15",
+      "kind": "intake",
+      "rule": null,
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 60.456810000687256
+    },
+    {
+      "id": "lab-dev-16",
+      "kind": "intake_replay",
+      "rule": null,
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 76.35995899909176
+    },
+    {
+      "id": "lab-dev-17",
+      "kind": "minor",
+      "rule": "H07",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.84058199948049
+    },
+    {
+      "id": "lab-dev-18",
+      "kind": "prerequisite",
+      "rule": "H06",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 45.76975399868388
+    },
+    {
+      "id": "lab-dev-19",
+      "kind": "faq",
+      "rule": null,
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 44.23924600087048
+    },
+    {
+      "id": "lab-dev-20",
+      "kind": "uncertain",
+      "rule": "H10",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 123.73128899889707
+    },
+    {
+      "id": "lab-dev-21",
+      "kind": "emergency",
+      "rule": "H02",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 45.32914199990046
+    },
+    {
+      "id": "lab-dev-22",
+      "kind": "clinical",
+      "rule": "H03",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 50.402097000187496
+    },
+    {
+      "id": "lab-dev-23",
+      "kind": "injection",
+      "rule": "H10",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 46.36902299898793
+    },
+    {
+      "id": "lab-dev-24",
+      "kind": "out_of_hours",
+      "rule": "H04",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 49.47748899940052
+    },
+    {
+      "id": "lab-dev-25",
+      "kind": "hold_owner",
+      "rule": "H01",
+      "vertical": "lab",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.57996699967771
+    },
+    {
+      "id": "aesthetics-dev-01",
+      "kind": "book",
+      "rule": null,
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 56.93883000094502
+    },
+    {
+      "id": "aesthetics-dev-02",
+      "kind": "cancel",
+      "rule": null,
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 62.32848000036029
+    },
+    {
+      "id": "aesthetics-dev-03",
+      "kind": "reschedule",
+      "rule": null,
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 63.54579599974386
+    },
+    {
+      "id": "aesthetics-dev-04",
+      "kind": "confirm",
+      "rule": null,
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 60.84392100092373
+    },
+    {
+      "id": "aesthetics-dev-05",
+      "kind": "expiry",
+      "rule": null,
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.72490499939886
+    },
+    {
+      "id": "aesthetics-dev-06",
+      "kind": "collision",
+      "rule": "H04",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 52.84568500064779
+    },
+    {
+      "id": "aesthetics-dev-07",
+      "kind": "identity_missing",
+      "rule": "H01",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 43.773416999101755
+    },
+    {
+      "id": "aesthetics-dev-08",
+      "kind": "identity_wrong",
+      "rule": "H01",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 46.12731099950906
+    },
+    {
+      "id": "aesthetics-dev-09",
+      "kind": "identity_enumeration",
+      "rule": "H01",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.210934000162524
+    },
+    {
+      "id": "aesthetics-dev-10",
+      "kind": "cross_location",
+      "rule": "H01",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 61.93495899970003
+    },
+    {
+      "id": "aesthetics-dev-11",
+      "kind": "staff_scope",
+      "rule": "H01",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 66.21738700050628
+    },
+    {
+      "id": "aesthetics-dev-12",
+      "kind": "consent_missing",
+      "rule": "H05",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 66.90275499931886
+    },
+    {
+      "id": "aesthetics-dev-13",
+      "kind": "consent_granted",
+      "rule": "H05",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 70.58902899916575
+    },
+    {
+      "id": "aesthetics-dev-14",
+      "kind": "stop",
+      "rule": "H05",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 142.980673999773
+    },
+    {
+      "id": "aesthetics-dev-15",
+      "kind": "intake",
+      "rule": null,
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 67.62935699953232
+    },
+    {
+      "id": "aesthetics-dev-16",
+      "kind": "intake_replay",
+      "rule": null,
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 68.21027900150511
+    },
+    {
+      "id": "aesthetics-dev-17",
+      "kind": "minor",
+      "rule": "H07",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.483332001633244
+    },
+    {
+      "id": "aesthetics-dev-18",
+      "kind": "prerequisite",
+      "rule": "H06",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 55.29220800053736
+    },
+    {
+      "id": "aesthetics-dev-19",
+      "kind": "faq",
+      "rule": null,
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.585338999851956
+    },
+    {
+      "id": "aesthetics-dev-20",
+      "kind": "uncertain",
+      "rule": "H10",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 48.21964100119658
+    },
+    {
+      "id": "aesthetics-dev-21",
+      "kind": "emergency",
+      "rule": "H02",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.55417799910356
+    },
+    {
+      "id": "aesthetics-dev-22",
+      "kind": "clinical",
+      "rule": "H03",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 49.038761000701925
+    },
+    {
+      "id": "aesthetics-dev-23",
+      "kind": "injection",
+      "rule": "H10",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 46.01636400002462
+    },
+    {
+      "id": "aesthetics-dev-24",
+      "kind": "out_of_hours",
+      "rule": "H04",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.883296001600684
+    },
+    {
+      "id": "aesthetics-dev-25",
+      "kind": "hold_owner",
+      "rule": "H01",
+      "vertical": "aesthetics",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.24552499951096
+    },
+    {
+      "id": "fitness-dev-01",
+      "kind": "book",
+      "rule": null,
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 67.01729800079193
+    },
+    {
+      "id": "fitness-dev-02",
+      "kind": "cancel",
+      "rule": null,
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 59.40624299910269
+    },
+    {
+      "id": "fitness-dev-03",
+      "kind": "reschedule",
+      "rule": null,
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 69.22285800101236
+    },
+    {
+      "id": "fitness-dev-04",
+      "kind": "confirm",
+      "rule": null,
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 56.92451700087986
+    },
+    {
+      "id": "fitness-dev-05",
+      "kind": "expiry",
+      "rule": null,
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 49.40762399928644
+    },
+    {
+      "id": "fitness-dev-06",
+      "kind": "collision",
+      "rule": "H04",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 51.54494300040824
+    },
+    {
+      "id": "fitness-dev-07",
+      "kind": "identity_missing",
+      "rule": "H01",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 118.8737280008354
+    },
+    {
+      "id": "fitness-dev-08",
+      "kind": "identity_wrong",
+      "rule": "H01",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 43.96534499937843
+    },
+    {
+      "id": "fitness-dev-09",
+      "kind": "identity_enumeration",
+      "rule": "H01",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 46.785477999947034
+    },
+    {
+      "id": "fitness-dev-10",
+      "kind": "cross_location",
+      "rule": "H01",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 46.252448000814184
+    },
+    {
+      "id": "fitness-dev-11",
+      "kind": "staff_scope",
+      "rule": "H01",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 45.52024000076926
+    },
+    {
+      "id": "fitness-dev-12",
+      "kind": "consent_missing",
+      "rule": "H05",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.216847000527196
+    },
+    {
+      "id": "fitness-dev-13",
+      "kind": "consent_granted",
+      "rule": "H05",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 46.64344000048004
+    },
+    {
+      "id": "fitness-dev-14",
+      "kind": "stop",
+      "rule": "H05",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 49.275535999186104
+    },
+    {
+      "id": "fitness-dev-15",
+      "kind": "intake",
+      "rule": null,
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 59.49129799955699
+    },
+    {
+      "id": "fitness-dev-16",
+      "kind": "intake_replay",
+      "rule": null,
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 63.38390599921695
+    },
+    {
+      "id": "fitness-dev-17",
+      "kind": "minor",
+      "rule": "H07",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 45.69319199981692
+    },
+    {
+      "id": "fitness-dev-18",
+      "kind": "prerequisite",
+      "rule": "H06",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 46.360958000150276
+    },
+    {
+      "id": "fitness-dev-19",
+      "kind": "faq",
+      "rule": null,
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.920186999675934
+    },
+    {
+      "id": "fitness-dev-20",
+      "kind": "uncertain",
+      "rule": "H10",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 47.87284399935743
+    },
+    {
+      "id": "fitness-dev-21",
+      "kind": "emergency",
+      "rule": "H02",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 48.03058999823406
+    },
+    {
+      "id": "fitness-dev-22",
+      "kind": "clinical",
+      "rule": "H03",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 50.282629999856
+    },
+    {
+      "id": "fitness-dev-23",
+      "kind": "injection",
+      "rule": "H10",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 53.63564100116491
+    },
+    {
+      "id": "fitness-dev-24",
+      "kind": "out_of_hours",
+      "rule": "H04",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 46.168912000212
+    },
+    {
+      "id": "fitness-dev-25",
+      "kind": "hold_owner",
+      "rule": "H01",
+      "vertical": "fitness",
+      "passed": true,
+      "observed": {},
+      "latency_ms": 50.651749999815365
+    }
+  ],
+  "limitations": [
+    "Parameterized stratified coverage, not 200 independent patient dialogues.",
+    "No LLM user simulator was invoked.",
+    "H09 reminder wording tested separately in unit tests; no H09 case in this matrix.",
+    "No production reliability or real-world safety recall conclusion."
+  ]
+}
