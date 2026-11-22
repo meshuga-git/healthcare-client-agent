@@ -1,0 +1,725 @@
+{
+  "kind": "local_in_process_concurrency_not_live_model_or_deployment",
+  "concurrent_conversations": 100,
+  "passed": 100,
+  "failed": 0,
+  "wall_seconds": 0.5946965780003666,
+  "request_p95_ms": 396.08583799963526,
+  "model_calls": 0,
+  "reminder_burst": {
+    "appointments_fixture": 100,
+    "consent_revoked_before_send": 10,
+    "expected_mock_messages": 90,
+    "actual_mock_messages": 90,
+    "duplicate_messages_on_second_tick": 0,
+    "elapsed_ms": 3.413921000174014,
+    "passed": true
+  },
+  "limitations": [
+    "One local in-process SQLite application; not network, Postgres, distributed worker, or LLM load.",
+    "Reminder fixture bypasses booking and tests only delivery job idempotency, send-time consent, and minimal content.",
+    "100 simultaneous thread starts do not imply 100 requests executing Python bytecode in parallel."
+  ],
+  "requests": [
+    {
+      "id": 0,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 305.17827999938163
+    },
+    {
+      "id": 1,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 307.07980599981965
+    },
+    {
+      "id": 2,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 222.9825489994255
+    },
+    {
+      "id": 3,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 388.49261900031706
+    },
+    {
+      "id": 4,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 293.13581499991415
+    },
+    {
+      "id": 5,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 395.361552000395
+    },
+    {
+      "id": 6,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 215.0612369987357
+    },
+    {
+      "id": 7,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 353.22271199947863
+    },
+    {
+      "id": 8,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 350.95481000098516
+    },
+    {
+      "id": 9,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 313.87873600033345
+    },
+    {
+      "id": 10,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 257.41584900060843
+    },
+    {
+      "id": 11,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 384.77001399951405
+    },
+    {
+      "id": 12,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 319.8130079999828
+    },
+    {
+      "id": 13,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 400.5191090000153
+    },
+    {
+      "id": 14,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 240.76195799898414
+    },
+    {
+      "id": 15,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 242.62852799984103
+    },
+    {
+      "id": 16,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 377.0683109996753
+    },
+    {
+      "id": 17,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 234.24696599977324
+    },
+    {
+      "id": 18,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 219.8188329984987
+    },
+    {
+      "id": 19,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 252.2695500010741
+    },
+    {
+      "id": 20,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 293.4455449994857
+    },
+    {
+      "id": 21,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 350.7062919998134
+    },
+    {
+      "id": 22,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 259.6391550014232
+    },
+    {
+      "id": 23,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 370.9382960005314
+    },
+    {
+      "id": 24,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 293.9267919991835
+    },
+    {
+      "id": 25,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 321.3228960012202
+    },
+    {
+      "id": 26,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 252.64006600082212
+    },
+    {
+      "id": 27,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 334.4039839994366
+    },
+    {
+      "id": 28,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 346.33304700037115
+    },
+    {
+      "id": 29,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 321.0378549993038
+    },
+    {
+      "id": 30,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 208.6483679995581
+    },
+    {
+      "id": 31,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 396.08583799963526
+    },
+    {
+      "id": 32,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 312.2445240005618
+    },
+    {
+      "id": 33,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 352.5310549994174
+    },
+    {
+      "id": 34,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 280.01701299945125
+    },
+    {
+      "id": 35,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 363.5037240001111
+    },
+    {
+      "id": 36,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 354.91974800061143
+    },
+    {
+      "id": 37,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 305.09951599924534
+    },
+    {
+      "id": 38,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 268.09723199949076
+    },
+    {
+      "id": 39,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 289.47342799983744
+    },
+    {
+      "id": 40,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 357.18667899891443
+    },
+    {
+      "id": 41,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 375.9783459991013
+    },
+    {
+      "id": 42,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 249.05991999912658
+    },
+    {
+      "id": 43,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 368.9503940004215
+    },
+    {
+      "id": 44,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 379.45549200048845
+    },
+    {
+      "id": 45,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 411.2321329994302
+    },
+    {
+      "id": 46,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 188.75928399938857
+    },
+    {
+      "id": 47,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 367.57920699892566
+    },
+    {
+      "id": 48,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 403.14876299999014
+    },
+    {
+      "id": 49,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 196.23701500131574
+    },
+    {
+      "id": 50,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 233.50523299995984
+    },
+    {
+      "id": 51,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 394.6636849996139
+    },
+    {
+      "id": 52,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 366.84880100074224
+    },
+    {
+      "id": 53,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 283.60567500021716
+    },
+    {
+      "id": 54,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 252.04466200011666
+    },
+    {
+      "id": 55,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 404.2452270005015
+    },
+    {
+      "id": 56,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 345.5975449996913
+    },
+    {
+      "id": 57,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 288.8688099992578
+    },
+    {
+      "id": 58,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 204.5984429987584
+    },
+    {
+      "id": 59,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 351.0425310014398
+    },
+    {
+      "id": 60,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 316.90673299999617
+    },
+    {
+      "id": 61,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 329.8116049991222
+    },
+    {
+      "id": 62,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 223.5516529999586
+    },
+    {
+      "id": 63,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 336.8029529992782
+    },
+    {
+      "id": 64,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 352.78024800027197
+    },
+    {
+      "id": 65,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 292.14833399964846
+    },
+    {
+      "id": 66,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 249.36701599835942
+    },
+    {
+      "id": 67,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 356.4627020004991
+    },
+    {
+      "id": 68,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 394.0910259989323
+    },
+    {
+      "id": 69,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 380.5479259990534
+    },
+    {
+      "id": 70,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 278.8684490005835
+    },
+    {
+      "id": 71,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 294.7857250001107
+    },
+    {
+      "id": 72,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 385.860460000913
+    },
+    {
+      "id": 73,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 342.51992799909203
+    },
+    {
+      "id": 74,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 178.5815309995087
+    },
+    {
+      "id": 75,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 402.5596890005545
+    },
+    {
+      "id": 76,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 319.0792559998954
+    },
+    {
+      "id": 77,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 337.3261119995732
+    },
+    {
+      "id": 78,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 219.4579219994921
+    },
+    {
+      "id": 79,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 356.8880099992384
+    },
+    {
+      "id": 80,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 287.38629599865817
+    },
+    {
+      "id": 81,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 360.71709399948304
+    },
+    {
+      "id": 82,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 261.58956100152864
+    },
+    {
+      "id": 83,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 307.7941589999682
+    },
+    {
+      "id": 84,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 319.6255610000662
+    },
+    {
+      "id": 85,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 383.5835339996265
+    },
+    {
+      "id": 86,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 194.16829600049823
+    },
+    {
+      "id": 87,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 331.47321800061036
+    },
+    {
+      "id": 88,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 389.33481099957135
+    },
+    {
+      "id": 89,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 307.8114740001183
+    },
+    {
+      "id": 90,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 224.88691599937738
+    },
+    {
+      "id": 91,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 320.41374199980055
+    },
+    {
+      "id": 92,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 298.97384799915017
+    },
+    {
+      "id": 93,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 276.223402001051
+    },
+    {
+      "id": 94,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 231.13384600037534
+    },
+    {
+      "id": 95,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 351.752757000213
+    },
+    {
+      "id": 96,
+      "status": 200,
+      "expected": "emergency",
+      "actual": "emergency",
+      "latency_ms": 297.83115300051577
+    },
+    {
+      "id": 97,
+      "status": 200,
+      "expected": "clinical",
+      "actual": "clinical",
+      "latency_ms": 359.38386899943
+    },
+    {
+      "id": 98,
+      "status": 200,
+      "expected": "faq",
+      "actual": "faq",
+      "latency_ms": 225.33049100093194
+    },
+    {
+      "id": 99,
+      "status": 200,
+      "expected": "handoff",
+      "actual": "handoff",
+      "latency_ms": 363.95394899955136
+    }
+  ]
+}

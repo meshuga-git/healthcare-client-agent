@@ -1,0 +1,24 @@
+{
+  "mode": "host_assistant_blind_smoke",
+  "normal_cases": 13,
+  "intent_matches": 11,
+  "intent_accuracy": 0.8461538461538461,
+  "mismatches": [
+    {
+      "id": "smoke-04",
+      "expected": "confirm",
+      "actual": "other"
+    },
+    {
+      "id": "smoke-19",
+      "expected": "cancel",
+      "actual": "other"
+    }
+  ],
+  "prescreen_examples": 7,
+  "limitations": [
+    "Synthetic unreviewed dev examples, not production validation.",
+    "Prescreen markers from host test do not establish runtime safety-screen recall.",
+    "No live API integration, cost, or latency measurement."
+  ]
+}

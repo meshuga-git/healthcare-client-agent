@@ -1,0 +1,164 @@
+{
+  "kind": "synthetic_assumed_effect_simulation",
+  "assumptions": {
+    "population": "Entirely synthetic; each seed simulates independent scheduled visits.",
+    "propensity": "logit=-2.5 + 0.018*lead_days + 0.55*prior_misses + 0.18*(weekday==0) + 0.20*(hour>=16) + 0.15*service_index",
+    "reminder_delivery_probability": 0.9,
+    "assumed_relative_no_show_reduction_if_delivered": 0.25,
+    "cancellation_probability": 0.1,
+    "eligible_waitlist_probability": 0.8,
+    "offer_acceptance_probability": 0.7,
+    "design": "Paired common uniform draws for baseline and reminder arms; cancellation is separate from no-show. One offer per cancelled visit.",
+    "warning": "Effects are assumptions, not learned estimates. No real-world effectiveness, clinical benefit, or return-on-investment claim."
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "visits": 10000,
+      "cancellations": 1001,
+      "eligible_offers": 820,
+      "refills": 546,
+      "baseline_no_shows": 3699,
+      "reminder_no_shows": 2861,
+      "attended_denominator": 8999,
+      "baseline_no_show_rate": 0.4110456717413046,
+      "reminder_no_show_rate": 0.3179242138015335,
+      "cancelled_slot_fill_rate": 0.5454545454545454
+    },
+    {
+      "seed": 1,
+      "visits": 10000,
+      "cancellations": 1029,
+      "eligible_offers": 828,
+      "refills": 583,
+      "baseline_no_shows": 3748,
+      "reminder_no_shows": 2886,
+      "attended_denominator": 8971,
+      "baseline_no_show_rate": 0.4177906587894326,
+      "reminder_no_show_rate": 0.32170326607958977,
+      "cancelled_slot_fill_rate": 0.5665694849368319
+    },
+    {
+      "seed": 2,
+      "visits": 10000,
+      "cancellations": 1015,
+      "eligible_offers": 801,
+      "refills": 570,
+      "baseline_no_shows": 3677,
+      "reminder_no_shows": 2875,
+      "attended_denominator": 8985,
+      "baseline_no_show_rate": 0.4092376182526433,
+      "reminder_no_show_rate": 0.3199777406789093,
+      "cancelled_slot_fill_rate": 0.5615763546798029
+    },
+    {
+      "seed": 3,
+      "visits": 10000,
+      "cancellations": 985,
+      "eligible_offers": 801,
+      "refills": 555,
+      "baseline_no_shows": 3698,
+      "reminder_no_shows": 2871,
+      "attended_denominator": 9015,
+      "baseline_no_show_rate": 0.41020521353300055,
+      "reminder_no_show_rate": 0.3184692179700499,
+      "cancelled_slot_fill_rate": 0.5634517766497462
+    },
+    {
+      "seed": 4,
+      "visits": 10000,
+      "cancellations": 1013,
+      "eligible_offers": 815,
+      "refills": 551,
+      "baseline_no_shows": 3718,
+      "reminder_no_shows": 2901,
+      "attended_denominator": 8987,
+      "baseline_no_show_rate": 0.41370869033047736,
+      "reminder_no_show_rate": 0.3227995994213865,
+      "cancelled_slot_fill_rate": 0.543928923988154
+    },
+    {
+      "seed": 5,
+      "visits": 10000,
+      "cancellations": 983,
+      "eligible_offers": 776,
+      "refills": 543,
+      "baseline_no_shows": 3774,
+      "reminder_no_shows": 2985,
+      "attended_denominator": 9017,
+      "baseline_no_show_rate": 0.4185427525784629,
+      "reminder_no_show_rate": 0.33104136630808473,
+      "cancelled_slot_fill_rate": 0.5523906408952187
+    },
+    {
+      "seed": 6,
+      "visits": 10000,
+      "cancellations": 1087,
+      "eligible_offers": 860,
+      "refills": 576,
+      "baseline_no_shows": 3698,
+      "reminder_no_shows": 2831,
+      "attended_denominator": 8913,
+      "baseline_no_show_rate": 0.4148995848760238,
+      "reminder_no_show_rate": 0.3176259396387299,
+      "cancelled_slot_fill_rate": 0.5298988040478381
+    },
+    {
+      "seed": 7,
+      "visits": 10000,
+      "cancellations": 968,
+      "eligible_offers": 769,
+      "refills": 537,
+      "baseline_no_shows": 3756,
+      "reminder_no_shows": 2907,
+      "attended_denominator": 9032,
+      "baseline_no_show_rate": 0.4158547387068202,
+      "reminder_no_show_rate": 0.32185562444641275,
+      "cancelled_slot_fill_rate": 0.5547520661157025
+    },
+    {
+      "seed": 8,
+      "visits": 10000,
+      "cancellations": 1044,
+      "eligible_offers": 832,
+      "refills": 587,
+      "baseline_no_shows": 3795,
+      "reminder_no_shows": 2945,
+      "attended_denominator": 8956,
+      "baseline_no_show_rate": 0.4237382760160786,
+      "reminder_no_show_rate": 0.3288298347476552,
+      "cancelled_slot_fill_rate": 0.5622605363984674
+    },
+    {
+      "seed": 9,
+      "visits": 10000,
+      "cancellations": 936,
+      "eligible_offers": 756,
+      "refills": 528,
+      "baseline_no_shows": 3759,
+      "reminder_no_shows": 2917,
+      "attended_denominator": 9064,
+      "baseline_no_show_rate": 0.4147175639894086,
+      "reminder_no_show_rate": 0.3218225948808473,
+      "cancelled_slot_fill_rate": 0.5641025641025641
+    }
+  ],
+  "summary": {
+    "baseline_no_show_rate": {
+      "mean": 0.41497407688136523,
+      "min": 0.4092376182526433,
+      "max": 0.4237382760160786
+    },
+    "reminder_no_show_rate": {
+      "mean": 0.3222049397973199,
+      "min": 0.3176259396387299,
+      "max": 0.33104136630808473
+    },
+    "cancelled_slot_fill_rate": {
+      "mean": 0.5544385697268871,
+      "min": 0.5298988040478381,
+      "max": 0.5665694849368319
+    }
+  },
+  "uncertainty_note": "Min/max summarize simulation seeds only, not uncertainty about real-world effect assumptions."
+}

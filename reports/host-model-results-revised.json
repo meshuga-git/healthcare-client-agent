@@ -1,0 +1,13 @@
+{
+  "mode": "host_assistant_dev_prompt_iteration",
+  "normal_cases": 13,
+  "intent_matches": 13,
+  "mismatches": [],
+  "prescreen_examples": 7,
+  "limitations": [
+    "Reused dev cases after prompt adjustment; not blind independent evaluation.",
+    "Runtime safety recall not measured by these prescreen markers.",
+    "No live API call, cost or latency measurement.",
+    "R shortcut absent from host cases; covered separately by code tests."
+  ]
+}

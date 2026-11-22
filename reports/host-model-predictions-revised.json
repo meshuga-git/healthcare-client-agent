@@ -1,0 +1,22 @@
+[
+  {"id":"smoke-01","safety_route":"not_intercepted","model_output":{"intent":"book","handoff":false}},
+  {"id":"smoke-02","safety_route":"not_intercepted","model_output":{"intent":"reschedule","handoff":false}},
+  {"id":"smoke-03","safety_route":"not_intercepted","model_output":{"intent":"cancel","handoff":false}},
+  {"id":"smoke-04","safety_route":"not_intercepted","model_output":{"intent":"confirm","handoff":false}},
+  {"id":"smoke-05","safety_route":"not_intercepted","model_output":{"intent":"faq","handoff":false}},
+  {"id":"smoke-06","safety_route":"not_intercepted","model_output":{"intent":"intake","handoff":false}},
+  {"id":"smoke-07","safety_route":"not_intercepted","model_output":{"intent":"waitlist","handoff":false}},
+  {"id":"smoke-08","safety_route":"not_intercepted","model_output":{"intent":"other","handoff":true}},
+  {"id":"smoke-09","safety_route":"not_intercepted","model_output":{"intent":"other","handoff":true}},
+  {"id":"smoke-10","safety_route":"not_intercepted","model_output":{"intent":"other","handoff":true}},
+  {"id":"smoke-11","safety_route":"intercepted","model_output":null},
+  {"id":"smoke-12","safety_route":"intercepted","model_output":null},
+  {"id":"smoke-13","safety_route":"intercepted","model_output":null},
+  {"id":"smoke-14","safety_route":"intercepted","model_output":null},
+  {"id":"smoke-15","safety_route":"intercepted","model_output":null},
+  {"id":"smoke-16","safety_route":"intercepted","model_output":null},
+  {"id":"smoke-17","safety_route":"intercepted","model_output":null},
+  {"id":"smoke-18","safety_route":"not_intercepted","model_output":{"intent":"faq","handoff":false}},
+  {"id":"smoke-19","safety_route":"not_intercepted","model_output":{"intent":"cancel","handoff":false}},
+  {"id":"smoke-20","safety_route":"not_intercepted","model_output":{"intent":"book","handoff":false}}
+]
