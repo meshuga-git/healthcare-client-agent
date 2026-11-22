@@ -1,0 +1,102 @@
+[
+  {
+    "id": "smoke-01",
+    "intent": "book",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-02",
+    "intent": "reschedule",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-03",
+    "intent": "cancel",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-04",
+    "intent": "confirm",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-05",
+    "intent": "faq",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-06",
+    "intent": "intake",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-07",
+    "intent": "waitlist",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-08",
+    "intent": "other",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-09",
+    "intent": "other",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-10",
+    "intent": "other",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-11",
+    "intent": "other",
+    "safety_rule": "H02"
+  },
+  {
+    "id": "smoke-12",
+    "intent": "other",
+    "safety_rule": "H02"
+  },
+  {
+    "id": "smoke-13",
+    "intent": "other",
+    "safety_rule": "H02"
+  },
+  {
+    "id": "smoke-14",
+    "intent": "other",
+    "safety_rule": "H02"
+  },
+  {
+    "id": "smoke-15",
+    "intent": "other",
+    "safety_rule": "H03"
+  },
+  {
+    "id": "smoke-16",
+    "intent": "other",
+    "safety_rule": "H03"
+  },
+  {
+    "id": "smoke-17",
+    "intent": "other",
+    "safety_rule": "H03"
+  },
+  {
+    "id": "smoke-18",
+    "intent": "faq",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-19",
+    "intent": "cancel",
+    "safety_rule": null
+  },
+  {
+    "id": "smoke-20",
+    "intent": "book",
+    "safety_rule": null
+  }
+]
