@@ -1,0 +1,126 @@
+schema_version: 1
+id: harbor-aesthetics
+name: Harbor Aesthetics
+vertical: aesthetics
+profile: us_demo
+location:
+  id: aesthetics-site
+  name: Aesthetics Demonstration Site
+  timezone: America/New_York
+  address: "Synthetic demonstration location \u2014 not a real address"
+  hours:
+    '0':
+    - 09:00
+    - '17:00'
+    '1':
+    - 09:00
+    - '17:00'
+    '2':
+    - 09:00
+    - '17:00'
+    '3':
+    - 09:00
+    - '17:00'
+    '4':
+    - 09:00
+    - '17:00'
+  holidays:
+  - '2026-12-25'
+  - '2027-01-01'
+scheduling:
+  min_lead_minutes: 60
+  max_horizon_days: 90
+  slot_step_minutes: 15
+  hold_minutes: 10
+  cancel_window_hours: 24
+  late_cancel_staff_approval: true
+  fee_notice: Late cancellation may require staff review. No fees are charged in this
+    demonstration.
+  urgent_reserved_hours: []
+providers:
+- id: aesthetics-aesthetic_practitioner
+  skills:
+  - aesthetic_practitioner
+  hours:
+    '0':
+    - 09:00
+    - '17:00'
+    '1':
+    - 09:00
+    - '17:00'
+    '2':
+    - 09:00
+    - '17:00'
+    '3':
+    - 09:00
+    - '17:00'
+    '4':
+    - 09:00
+    - '17:00'
+resources:
+- id: aesthetics-room
+  type: room
+  capacity: 1
+- id: aesthetics-equipment
+  type: equipment
+  capacity: 1
+services:
+- id: aesthetics-consult
+  name: Consultation
+  duration_minutes: 30
+  buffer_minutes: 10
+  skill: aesthetic_practitioner
+  resources:
+  - room
+  - equipment
+  prerequisites: []
+  capacity: 1
+  discreet: true
+  intake_template: standard
+- id: aesthetics-procedure
+  name: Procedure booking
+  duration_minutes: 60
+  buffer_minutes: 15
+  skill: aesthetic_practitioner
+  resources:
+  - room
+  - equipment
+  prerequisites:
+  - consultation_completed
+  - consent_signed
+  capacity: 1
+  discreet: true
+  intake_template: standard
+reminders:
+  hours_before:
+  - 72
+  - 24
+  - 2
+  discreet: true
+  template: '{practice}: appointment at {start}, {location}. Reply C to confirm, R
+    to reschedule, X to cancel.'
+  prep_note: Please complete your intake form before arrival.
+intake_templates:
+  standard:
+    required:
+    - contact_confirmed
+    - privacy_acknowledged
+    optional:
+    - accessibility_requests
+    clinical_fields: []
+faq:
+- id: hours
+  question: What are your opening hours?
+  answer: "This synthetic site is open Monday through Friday, 9 AM\u20135 PM local\
+    \ time, except configured closures."
+  source: config://aesthetics/location/hours
+- id: parking
+  question: Where can I park?
+  answer: This is a fictional site. For a real visit, ask the practice to confirm
+    accessibility and parking.
+  source: config://aesthetics/faq/parking
+- id: policy
+  question: What is your cancellation policy?
+  answer: This demonstration asks for 24 hours notice; later requests go to staff.
+    No fees are charged here.
+  source: config://aesthetics/scheduling/cancel_window_hours
